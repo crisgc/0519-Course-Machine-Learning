@@ -1,0 +1,12 @@
+* Geral
+
+- [X] Instalar o poetry
+
+* Tarefas 1
+
+- [ ] Criar feature para a análise da tarefas 1
+  - tarefa01
+
+* Futuro
+
+- [ ] Fazer próximas tarefas
