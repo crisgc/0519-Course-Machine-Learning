@@ -4,8 +4,11 @@
 
 * Tarefas 1
 
-- [ ] Criar feature para a análise da tarefas 1
+- [X] Criar feature para a análise da tarefas 1
   - tarefa01
+- [ ] Criar feature para a análise da tarefas 2
+  - tarefa02
+  - [ ] Finalizar a feature
 
 * Futuro
 
