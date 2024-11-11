@@ -2,14 +2,15 @@
 
 - [X] Instalar o poetry
 
-* Tarefas 1
+* Tarefas
 
 - [X] Criar feature para a análise da tarefas 1
   - tarefa01
-- [ ] Criar feature para a análise da tarefas 2
+- [X] Criar feature para a análise da tarefas 2
   - tarefa02
-  - [ ] Finalizar a feature
+  - [X] Finalizar a feature
 
-* Futuro
+* Fazer o relatório
 
-- [ ] Fazer próximas tarefas
+- [ ] Procurar modelo de relatório
+- [ ] Criar feature para o relatori
