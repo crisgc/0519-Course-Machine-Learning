@@ -12,5 +12,6 @@
 
 * Fazer o relatório
 
-- [ ] Procurar modelo de relatório
+- [X] Procurar modelo de relatório
+  - Abnt2tex
 - [ ] Criar feature para o relatori
