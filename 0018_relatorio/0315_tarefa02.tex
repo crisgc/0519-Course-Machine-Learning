@@ -66,11 +66,31 @@ neurais.
 \end{tabular}
 \end{table}
 
-Observamos que a partir do treinamento com 5000 épocas as redes neurais tem 
-erros muito próximos e uma maior quantidade de treinamento não faz uma 
-diferença significativa na capacidade de predição das redes. O caso especial 
-que podemos apontar é a rede treinada com a apenas 1000 épocas, a qual tem um 
-erro bem acima das demais e aparentemente reflete um caso de ``underfitting''. 
-Uma observação secundária é que esta rede 'Gelu' treinada por 1000 épocas, tem 
-uma capacidade de previsão parecida com a rede treinada utilizando sigmóide 
-como a função de ativação (\cref{tarefa01:simoide:predicoes})
+Após 5000 épocas de treinamento, foi observado que as redes neurais apresentam 
+erros muito próximos uns dos outros. Isso indica que, a partir desse ponto, 
+aumentar ainda mais o número de épocas de treinamento não traz melhorias 
+significativas na capacidade preditiva das redes. Este achado é importante, 
+pois sugere que as redes alcançaram um nível de desempenho máximo e que o 
+treinamento adicional pode não ser benéfico.
+
+Um caso especial que chama a atenção é a rede neural treinada com apenas 1000 
+épocas. Esta rede exibe um erro de previsão significativamente maior do que as 
+outras redes, indicando um caso de "underfitting". Underfitting ocorre quando 
+um modelo é muito simples para capturar os padrões complexos nos dados, 
+resultando em um desempenho de previsão inferior.
+
+Uma observação secundária interessante é a comparação entre a rede treinada com 
+a função de ativação Gelu por 1000 épocas e a rede treinada com a função de 
+ativação sigmóide. Parece que ambas as redes têm capacidades preditivas 
+semelhantes, apesar da diferença na função de ativação e no número de épocas de 
+treinamento. Isso pode sugerir que, neste caso específico, a função de ativação 
+Gelu com menos épocas de treinamento pode alcançar um desempenho comparável ao 
+sigmóide.
+
+Em resumo, esta análise destaca a importância de monitorar o desempenho das 
+redes neurais em diferentes pontos do treinamento. Mostra que o underfitting 
+pode ocorrer com menos épocas de treinamento e que diferentes funções de 
+ativação podem ter impactos variados no desempenho do modelo. Os resultados 
+também sugerem que, após um certo número de épocas, a melhoria no desempenho da 
+rede neural pode ser marginal, indicando que a otimização adicional pode não 
+ser necessária.
