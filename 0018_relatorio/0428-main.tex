@@ -120,8 +120,8 @@ Crisitano Gurgel de Castro\thanks{Inmetro, (21) 2679 9799, cgcastro at inmetro g
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
-		pdftitle={\@title},
-		pdfauthor={\@author},
+		%pdftitle={\@title},
+		%pdfauthor={\@author},
     	%pdfsubject={Modelo de artigo científico com abnTeX2},
 	   % pdfcreator={LaTeX with abnTeX2},
 		%pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico},
@@ -163,7 +163,7 @@ Crisitano Gurgel de Castro\thanks{Inmetro, (21) 2679 9799, cgcastro at inmetro g
 \SingleSpacing
 
 % Definição do comando de questão
-\newenvironment{comandoquestao}{\begin{quote}\textbf{Comando:}}{\end{quote}}
+\newenvironment{comandoquestao}{\begin{citacao}\textbf{Comando:}}{\end{citacao}}
 
 
 % ----
@@ -250,102 +250,8 @@ Na presente atividade, se propõe-se a conduzir uma análise de uma série de ta
 
 Para as presentes tarefas, uma rede neural foi dada como exemplo. Tal rede é treinada para um conjunto de dados ${(x_i, y_i)}$ que refletem o comportamento de uma senóide $y_i = sen(x_i) + r_i$. Um ruído $r_i$ foi adicionado a cada medição de forma a refletir uma coleta de dados no mundo real com uma incerteza de medição associada
 
-\subsection{Tarefa 1}
+\input{0199_tarefa01.tex}
+%\input{0097_modeloabnt.tex}
 
-\begin{comandoquestao}
-   Nesta tarefa, você explorará o impacto de diferentes funções de ativação no desempenho da rede neural. A função de ativação controla como os neurônios transformam os dados de entrada, e diferentes funções podem influenciar a capacidade de aprendizado da rede.
-\end{comandoquestao}
-
-A rede neural dada como exemplo utiliza a função Gelu como função de ativação nas camadas intermediárias. Vericamos o comportamento do erro de treinamento em relação ao número de épocas de treinamento, bem como a análise dos dados em relação aos dados de treinamento na figura
-
-
-
-\section{Consulte o manual da classe \textsf{abntex2}}
-
-Consulte o manual da classe \textsf{abntex2} \cite{abntex2classe} para uma
-referência completa das macros e ambientes disponíveis.
-
-% ---
-% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
-% ---
-\bookmarksetup{startatroot}%
-% ---
-
-% ---
-% Conclusão
-% ---
-\section{Considerações finais}
-
-\lipsum[1]
-
-\begin{citacao}
-\lipsum[2]
-\end{citacao}
-
-\lipsum[3]
-
-% ----------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% ----------------------------------------------------------
-\postextual
-
-% ----------------------------------------------------------
-% Referências bibliográficas
-% ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
-
-% ----------------------------------------------------------
-% Glossário
-% ----------------------------------------------------------
-%
-% Há diversas soluções prontas para glossário em LaTeX.
-% Consulte o manual do abnTeX2 para obter sugestões.
-%
-%\glossary
-
-% ----------------------------------------------------------
-% Apêndices
-% ----------------------------------------------------------
-
-% ---
-% Inicia os apêndices
-% ---
-\begin{apendicesenv}
-
-% ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-% ----------------------------------------------------------
-\lipsum[55-56]
-
-\end{apendicesenv}
-% ---
-
-% ----------------------------------------------------------
-% Anexos
-% ----------------------------------------------------------
-\cftinserthook{toc}{AAA}
-% ---
-% Inicia os anexos
-% ---
-%\anexos
-\begin{anexosenv}
-
-% ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
-% ---
-
-\lipsum[31]
-
-\end{anexosenv}
-
-% ----------------------------------------------------------
-% Agradecimentos
-% ----------------------------------------------------------
-
-\section*{Agradecimentos}
-Texto sucinto aprovado pelo periódico em que será publicado. Último
-elemento pós-textual.
 
 \end{document}
