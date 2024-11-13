@@ -1,0 +1,17 @@
+* Geral
+
+- [X] Instalar o poetry
+
+* Tarefas
+
+- [X] Criar feature para a análise da tarefas 1
+  - tarefa01
+- [X] Criar feature para a análise da tarefas 2
+  - tarefa02
+  - [X] Finalizar a feature
+
+* Fazer o relatório
+
+- [X] Procurar modelo de relatório
+  - Abnt2tex
+- [ ] Criar feature para o relatori

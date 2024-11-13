@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "0519-course-machine-learning"
+version = "0.1.0"
+description = ""
+authors = ["Cristiano Gurgel de Castro <crisgc1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.1.3"
+matplotlib = "^3.9.2"
+pip = "^24.3.1"
+ipykernel = "^6.29.5"
+arrow = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

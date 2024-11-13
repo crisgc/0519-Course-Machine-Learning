@@ -1,0 +1,67 @@
+\section{Conclusão}
+
+Nesta presente análise, investigamos o impacto de vários parâmetros e 
+hiperparâmetros no treinamento e desempenho de redes neurais. Exploramos 
+diferentes funções de ativação, números de épocas, taxas de aprendizagem, 
+arquiteturas de rede, níveis de ruído nos dados e taxa de regularização. 
+Cada 
+tarefa forneceu ``insight''s sobre como esses fatores influenciam o 
+comportamento e a capacidade preditiva das redes neurais.
+
+\begin{comment}
+Na tarefa 1, descobrimos que a função de ativação Gelu nas camadas 
+intermediárias resultou em uma melhor capacidade de aprendizado em 
+comparação 
+com a função sigmóide. A função Relu, embora interessante, apresentou um 
+comportamento mais ruidoso, sugerindo a necessidade de uma inicialização 
+de 
+parâmetros e taxa de aprendizagem cuidadosas.
+
+Na tarefa 2, observamos que um número excessivo de épocas de treinamento 
+pode 
+não trazer benefícios significativos após um certo ponto. As redes neurais 
+convergiram para erros semelhantes após 5000 épocas, e a rede treinada com 
+apenas 1000 épocas exibiu underfitting. Esta análise destaca a importância 
+de 
+monitorar o desempenho em diferentes pontos do treinamento.
+
+A tarefa 3 enfatizou a escolha crucial da taxa de aprendizagem. Uma taxa 
+muito 
+baixa resultou em convergência lenta, enquanto uma taxa muito alta levou a 
+um 
+comportamento instável. A taxa de 0,05 pareceu ser um bom equilíbrio, 
+proporcionando uma convergência suave e um bom desempenho final.
+
+Na tarefa 4, descobrimos que a complexidade da arquitetura da rede deve 
+ser 
+considerada em relação à quantidade de dados. Uma rede neural mais simples 
+pode 
+convergir bem e fornecer resultados comparáveis a redes mais profundas, 
+dependendo do problema.
+
+A tarefa 5 revelou que níveis mais altos de ruído nos dados resultaram em 
+uma 
+convergência mais lenta e instável, mas o modelo adaptou-se e aprendeu a 
+lidar 
+com o ruído. Esta análise destaca a importância de considerar a qualidade 
+dos 
+dados e a necessidade de lidar com o ruído durante o treinamento.
+
+Por fim, na tarefa 6, vimos que a regularização L2 pode ajudar a prevenir 
+o 
+overfitting, mas uma regularização muito forte pode levar a underfitting. 
+O 
+valor de λ=0.001 pareceu ser um bom equilíbrio, permitindo alguma 
+regularização 
+sem comprometer o desempenho.
+\end{comment}
+
+Esta série de tarefas demonstra a importância da seleção cuidadosa 
+de parâmetros e hiperparâmetros no treinamento de redes neurais. A escolha 
+adequada de funções de ativação, número de épocas, taxa de aprendizagem, 
+arquitetura e regularização é crucial para alcançar um bom desempenho e 
+evitar 
+problemas como \textit{overfitting} e \textit{underfitting}. A análise 
+sistemática desses 
+fatores é essencial para otimizar os modelos de aprendizado de máquina e 
+garantir sua capacidade de generalização para novos dados.
