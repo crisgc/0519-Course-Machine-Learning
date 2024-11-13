@@ -43,8 +43,16 @@ Para a presente tarefa modificamos a função de ativação das camadas intermed
 	\end{minipage}
 \end{figure}
 
-Em uma segundo etapa, a função de ativação das camadas intermediárias foi modificada para a função Relu. Obtivemos os seguintes resultados da evolução das perdas durante o treinamento e do teste de predição da rede neural treinada mostrados nas \cref{tarefa01:relu:treinamento,tarefa01:relu:predicoes}. Observamos que com essa função de ativação obtivemos o gráfico de perda ao longo das épocas mais ruidoso. O que pode indicar uma inicialização de parâmetros e/ou taxa de aprendizada que pode ser melhorada para este tipo de rede neural. Em especial a inicialização do \emph{bias} requer uma atenção especial nesse caso, visto que para a função Relu é adequado um bias maior que 0.
-
+Em uma segundo etapa, a função de ativação das camadas intermediárias foi 
+modificada para a função Relu. Obtivemos os seguintes resultados da evolução 
+das perdas durante o treinamento e do teste de predição da rede neural treinada 
+mostrados nas \cref{tarefa01:relu:treinamento,tarefa01:relu:predicoes}. 
+Observamos que com essa função de ativação obtivemos o gráfico de perda ao 
+longo das épocas mais ruidoso. O que pode indicar uma inicialização de 
+parâmetros e/ou taxa de aprendizada que pode ser melhorada para este tipo de 
+rede neural. Em especial a inicialização do \emph{bias} requer uma atenção 
+especial nesse caso, visto que para a função Relu é adequado um bias inicial 
+maior que 0. 
 Outro ponto interessante que pode ser observado no predição da rede neural é que o modelo treinado não parece replicar uma curva continuamente diferenciável, mas tenta replicar a senóide através de trechos de funções afins. Essa observação vai ao encontro da característica da função Relu a qual não é continuamente diferenciável.
 
 \begin{figure}[htb]
@@ -64,7 +72,11 @@ Outro ponto interessante que pode ser observado no predição da rede neural é 
 	\end{minipage}
 \end{figure}
 
-Por fim, comparamos na \cref{tarefa01:tab:funcoes} os erros de treinamento para a época 9900 de cada uma das redes neurais com diferentes funções de ativação.
+Por fim, comparamos na \cref{tarefa01:tab:funcoes} os erros de treinamento para 
+a época 9900 de cada uma das redes neurais com diferentes funções de ativação. 
+Observamos que embora a Relu não consiga replicar o comportamento da senóide, 
+ela possui ao final o menor erro de treinamento. No entanto, esta rede neural 
+pode ter problemas com generalização.
 
 \begin{table}[htb]
 	\centering

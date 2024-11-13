@@ -3,12 +3,14 @@
 \begin{comandoquestao}
 Objetivo: Avaliar como a aplicação da regularização L2 ($\lambda_{L2}$) 
 influencia o 
-treinamento da rede neural, ajudando a prevenir o ``overfitting''. Exploraremos 
+treinamento da rede neural, ajudando a prevenir o \textit{overfitting}. 
+Exploraremos 
 diferentes valores de lambda para entender seu impacto no desempenho da rede.
 \end{comandoquestao}
 
 Foram realizados experimentos de treinamento com quatro diferentes valores de 
-$\lambda_{L2}$ (fator de regularização L2): 0,0, 0,001, 0,01 e 0,1. As curvas 
+$\lambda_{L2}$ (fator de regularização L2): \numlist{0,0;0,001;0,01;0,1}. As 
+curvas 
 de treinamento são mostradas na \cref{fig:tarefas06:curvas}. As previsões da 
 rede pode ser visualizadas nas 
 \cref{fig:tarefa06:00:predicoes,fig:tarefa06:0001:predicoes,fig:tarefa06:001:predicoes,fig:tarefa06:01:predicoes}.
@@ -65,10 +67,12 @@ desempenho do modelo.
 
 Quando $\lambda_{L2}=0.01$, a perda aumenta significativamente para 0.09901. 
 Neste caso, o 
-modelo está mostrando sinais de ``underfitting'', significando que a 
+modelo está mostrando sinais de \textit{underfitting} 
+(\cref{fig:tarefa06:001:predicoes}), significando que a 
 regularização é muito forte e começa a prejudicar a capacidade da rede de 
 aprender padrões complexos. O comportamento é semelhante ao de um modelo 
-treinado com poucas épocas, sugerindo que a regularização excessiva pode ter um 
+treinado com poucas épocas (\cref{tarefa02:1000:predicoes}), sugerindo que a 
+regularização excessiva pode ter um 
 efeito semelhante à falta de treinamento.
 
 Para $\lambda_{L2}=0,1$, a perda aumenta drasticamente para 0.30001. Este valor 
@@ -80,11 +84,11 @@ e não consegue capturar a complexidade dos dados, resultando em um desempenho
 inferior.
 
 Em resumo, esta análise destaca a importância de escolher o fator de 
-regularização adequado. Uma regularização muito fraca pode levar a 
-problemas de ``overfitting'', enquanto uma regularização muito forte 
+regularização adequado. Um fator muito baixo pode levar a 
+problemas de \textit{overfitting}, enquanto uma regularização muito forte 
 ($\lambda_{L2}=0.1$) 
 pode 
-resultar em ``underfitting'' e comportamento simplista. O valor de 
+resultar em \textit{underfitting} e comportamento simplista. O valor de 
 $\lambda_{L2}=0,001$ 
 parece ser um bom equilíbrio, permitindo alguma regularização sem comprometer 
 significativamente o desempenho do modelo. A escolha do fator de regularização 
