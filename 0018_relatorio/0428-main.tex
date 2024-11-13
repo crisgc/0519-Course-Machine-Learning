@@ -167,12 +167,16 @@ Crisitano Gurgel de Castro\thanks{Inmetro, (21) 2679 9799, cgcastro at inmetro g
 \SingleSpacing
 
 % Definição do comando de questão
+% TODO definir comando para ficar não permitir a quebra de página ao meio
 \newenvironment{comandoquestao}{\begin{citacao}\textbf{Comando:}}{\end{citacao}}
 
 % Definição matemáticas
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={,}}
 
 %\renewcommand{\sin}{\operatorname{sen}}
-%\DeclareMathOperator{\sin}{sen}
+%\let\sin\relax
+%\DeclareMathOperator{\sen}{sen}
 
 % ----
 % Início do documento
@@ -258,7 +262,8 @@ Na presente atividade, se propõe-se a conduzir uma análise de uma série de ta
 
 Para as presentes tarefas, uma rede neural foi dada como exemplo. Tal rede é 
 treinada para um conjunto de dados ${(x_i, y_i)}$ que refletem o comportamento 
-de uma senóide $y_i = \sin(x_i) + r_i$. Um ruído $r_i$ foi adicionado a cada 
+de uma senóide $y_i = \sin(x_i) + r_i$. Um ruído $r_i$ foi adicionado a 
+cada 
 medição de forma a refletir uma coleta de dados no mundo real com uma incerteza 
 de medição associada
 
